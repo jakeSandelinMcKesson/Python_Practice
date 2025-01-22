@@ -29,6 +29,8 @@
         myList = []
     #append
         myList.append(k)
+    #Quickly Sort a list
+        nums.sort()
     #find if something exists in a list
         if num in numbers:
     #find location of something in a list
@@ -53,6 +55,18 @@
 
     #Adding elements to a set is O(1) on average.
 
+#Heaps
+    #We can use heaps to track some things like queues  
+    # #and a limited amount of sorted numbers easily
+    #Creation
+        heapq.heapify(minHeap) #Created with a list of ints (minHeap)
+    #REmove smallest
+        heapq.heappop(minHeap)
+    #Add value to heap
+        heapq.heappush(minHeap,val)
+    #Get lowest value item in heap
+        minHeap[0]
+
 
 #Useful Python Functions:
     #Sorted: takes any iterable (e.g., a string, list, tuple, etc.) and returns a new sorted list of its elements.
@@ -63,7 +77,12 @@
     #join: 
         #method takes a list (or any iterable) of strings and combines them into a single string. 
         "".join(['a', 'e', 't']) # Output: "aet"
+    #Remove all alphanumeric characters
 
+#strings
+    s.lower()
+    s.isalnum()  #confirm is a letter/string is alphanumeric
+    t = (char for char in s if char.isalnum()) # removes all alphanumeric characters
 
 #Linked List
 #Reference the classes given you to find the child node. It's easy to go back and forth setting child and parent to other nodes.
